@@ -1,0 +1,313 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body, ul, li{
+    margin: 0px;
+    padding: 0px;
+    font-size: 1.2rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.dark-mode{
+  background-color: #1D2029;
+  color: white;
+}
+
+
+a{
+    text-decoration: none;
+}
+h1,p{
+    margin-bottom: 0px;
+    margin-top: 10px;
+    line-height: 75%;
+}
+h1{
+    font-size: 1.5em;
+}
+p{
+    font-size: 0.8em;
+}
+
+
+.flexteste{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
+
+.flexitem{
+    width: 30%;
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+
+.icon{
+    padding: 5px;
+}
+
+
+.header {
+    display: flex;
+    flex-wrap: wrap; /* significa que vai pra pra baixo na tela pequena */
+    /* justify-content: space-between; */
+    padding: 20px;
+    margin-left: 100px;
+    flex-direction: column;
+}
+.header2 {
+    display: flex;
+    flex-wrap: wrap; /* significa que vai pra pra baixo na tela pequena */
+    /* justify-content: space-between; */
+    padding: 20px;
+    margin-left: 100px;
+    margin-top: 5px;
+    flex-direction: column;
+}
+.grey{
+    color: #646673;  
+}
+.biggerHeader{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    background-color: #F8F9FE;
+} 
+
+.bigSquare{
+    grid-template-rows: repeat(10, 1fr);
+    margin-left: 30px;
+    display: grid;
+    background: #F0F3FA;
+    flex-direction: row;
+    width: 250px;
+    height: 200px;
+    line-height: 150px;
+    color: black;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center; 
+    cursor: pointer;
+}
+.principal{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 30px;
+    margin-left: 90px;
+    max-width: 1000px;
+    grid-gap: 30px;
+    flex-direction: row;
+}
+
+.fb{ 
+    background-color: hsl(203, 89%, 53%);
+    width: 250px;
+    height: 3px;
+    margin-left: 30px;
+    line-height: 150px;
+  }
+
+.twitter{  
+    background-color: hsl(195, 100%, 50%);
+    width: 250px;
+    height: 3px;
+    margin-left: 30px;
+    line-height: 150px;
+}
+
+.instagram{
+    background-image: linear-gradient(hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+    width: 250px;
+    height: 3px;
+    margin-left: 30px;
+    line-height: 150px;
+}
+
+.youtube{
+    background-color: hsl(348, 97%, 39%);
+    width: 250px;
+    height: 3px;
+    margin-left: 30px;
+    line-height: 150px;
+}
+
+
+@media (max-width: 600px){
+    /* se ficar menor que 600px, aplicar essas regras para o layout */
+    .principal, .flex-item-small{
+        display: block;
+        margin-left: 30px;
+    }
+    .fb{
+        margin-top: 10px;
+    }
+    .header, .header2{
+        margin: 0 auto;
+    }
+}
+
+.followers{
+    font-size: 0.157em;
+    grid-row:6; 
+    letter-spacing: 0.425em;
+}
+.number-today{
+    color: #41AB8F;
+    font-size: 0.2em;
+    grid-row:8
+}
+.number-down{
+    color: #DA4550;
+    font-size: 0.2em;
+    grid-row:8
+}
+.logo{
+    grid-row:2;
+    font-size: 0.1em;
+}
+.number{
+    grid-row: 4/5;
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    padding: 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    list-style: none;
+  }
+  
+  .flex-item-small {
+    background: #F0F3FA;
+    padding: 5px;
+    margin-top: 20px;
+    margin-right: 60px;
+    width: 240px;
+    height: 100px;
+    line-height: 150px;
+    color: black;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: left;
+    cursor: pointer;
+  }
+
+.flex-item-small:hover {
+    background-color: #E1E3EF;
+}
+.bigSquare:hover{
+    background-color: #E1E3EF;
+}
+
+.pageViews{
+    color: #646673; 
+    font-size: 0.4em;
+}
+.number2{
+    font-size: 1em;
+    /* margin-left: 10px;
+    margin-top: 30px; */
+}
+
+.logo2{
+   margin-left: 50px
+}
+
+
+/*  switch */
+.label {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .label-text {
+    margin-left: 1000px;
+    font-size: 0.7em;
+  }
+  
+  .toggle {
+    isolation: isolate;
+    position: relative;
+    height: 24px;
+    width: 48px;
+    border-radius: 15px;
+    background: #d6d6d6;
+    overflow: hidden;
+    left: 1125px;
+  }
+  
+  .toggle-inner {
+    z-index: 2;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    height: 22px;
+    width: 46px;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  
+  .active-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 200%;
+    background: linear-gradient(to right,hsl(244, 89%, 48%), hsl(133, 67%, 51%));
+    transform: translate3d(-100%, 0, 0);
+    transition: transform 0.05s linear 0.17s;
+  }
+  
+  .toggle-state {
+    display: none;
+  }
+  
+  .indicator {
+    height: 100%;
+    width: 200%;
+    background: white;
+    border-radius: 13px;
+    transform: translate3d(-75%, 0, 0);
+    transition: transform 0.35s cubic-bezier(0.85, 0.05, 0.18, 1.35);
+  }
+  
+  .toggle-state:checked ~ .active-bg {
+     transform: translate3d(-50%, 0, 0);
+  }
+  
+  .toggle-state:checked ~ .toggle-inner .indicator {
+     transform: translate3d(25%, 0, 0);
+  }
+
+@media (max-width: 600px){
+    /* se ficar menor que 600px, aplicar essas regras para o layout */
+    .grid1{
+    grid-template-columns: repeat(2, 1fr);
+    }
+    .grid1 > div:nth-child(n + 4){
+        display: block;
+    }
+    .grid1 > div.anuncio{
+        grid-column: auto;
+        grid-row: auto;
+        /* se eu quiser que ele vá pra primeira posicao */
+        order: -1;
+    }
+
+    .toggle{
+        left: 300px;
+    }
+    .label-text{
+        margin-left: 170px;
+
+    }
+}
+
