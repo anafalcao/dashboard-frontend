@@ -3,85 +3,139 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | [Challenge Name Here]</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" type="text/css" href="dist.css"> 
+  <script type="text/javascript" src="index.js"></script>
+  <title>Frontend Mentor | Social media dashboard with theme switcher </title>
 </head>
 <body>
+<div class="biggerHeader" id="biggerHeader">
+    <header class="header">
+            <label class="label" > 
+                <div class="toggle" >
+                  <input class="toggle-state" type="checkbox" id="darkmode" name="check" value="dark" />
+                  <div class="toggle-inner" onclick="darkmode()">
+                     <div class="indicator"></div>
+                  </div>
+                  <div class="active-bg"></div>
+                </div>
+                <div class="label-text">Dark Mode</div>
+              </label>
+              
+        <h1>Social Media Dashboard</h1>
+        <p class="grey">Total Followers: 23,004</p>
+</header>
+</div>
+<section class="principal" id="principal">
+    <div>
+        <div class="fb"></div>
+        <div class="bigSquare" id="bigSquare0">
+            <p class="logo"><img src="images/icon-facebook.svg"> <span id="grey";>  @heyana</span> </p>
+            <p class="number">1987</p>
+            <p class="followers"> FOLLOWERS</p>
+            <p class="number-today"> <img src="images/icon-up.svg" alt="">12 Today </p>
+        </div>
+    </div>
+    <div>
+            <div class="twitter"></div>
+            <div class="bigSquare" id="bigSquare1">
+                <p class="logo"><img src="images/icon-twitter.svg"> <span id="grey";>  @anafalcao</span> </p>
+                <p class="number">1044</p>
+                <p class="followers"> FOLLOWERS</p>
+                <p class="number-today"> <img src="images/icon-up.svg" alt="">12 Today </p>
+            </div>
+        </div>
+    <div>
+        <div class="instagram"></div>
+        <div class="bigSquare" id="bigSquare2">
+            <p class="logo"><img src="images/icon-instagram.svg"> <span id="grey";>  @anafalcao</span> </p>
+            <p class="number">11k</p>
+            <p class="followers"> FOLLOWERS</p>
+            <p class="number-today"> <img src="images/icon-up.svg" alt="">12 Today </p>
+        </div>
+    </div>
+    <div>
+        <div class="youtube"></div>
+        <div class="bigSquare" id="bigSquare3">
+            <p class="logo"><img src="images/icon-youtube.svg"> <span id="grey";>  @ana17</span> </p>
+            <p class="number">8239</p>
+            <p class="followers"> SUBSCRIBERS </p>
+            <p class="number-down"> <img src="images/icon-down.svg" alt="">12 Today </p>
+        </div>
+    </div>
+</section>
+<section class="header2">
+        <h4 class="grey" id="title">Overview - Today</h4>
+        <ul class="flex-container">
+                <li class="flex-item-small" id="bigSquare4">
+            <div class="flexteste">
+                <p class="pageViews flexitem"> Page Views </p> 
+                <p class="flexitem icon"><img src="images/icon-facebook.svg"> </p>
+                <p class="number2 flexitem"> 87 </p> </li>
+            </div>
 
-  Social Media Dashboard
-  Total Followers: 23,004
+                <li class="flex-item-small" id="bigSquare5">
+                        <div class="flexteste">
+                                <p class="pageViews flexitem"> Likes </p> 
+                                <p class="flexitem icon"><img src="images/icon-facebook.svg"> </p>
+                                <p class="number2 flexitem"> 52 </p> </li>
+                </div>
+                <li class="flex-item-small" id="bigSquare6">
+                        <div class="flexteste">
+                                <p class="pageViews flexitem"> Likes </p> 
+                                <p class="flexitem icon"><img src="images/icon-instagram.svg"> </p>
+                                <p class="number2 flexitem"> 5462 </p> </li>
+                            </div>
+                </li>
+                <li class="flex-item-small" id="bigSquare7">
+                        <div class="flexteste">
+                                <p class="pageViews flexitem"> Page Views </p> 
+                                <p class="flexitem icon"><img src="images/icon-instagram.svg"> </p>
+                                <p class="number2 flexitem"> 52k </p> </li>
+                            </div>
+                </li>
+            </ul>
+            
+            <ul class="flex-container">
+                <li class="flex-item-small" id="bigSquare8">
+                        <div class="flexteste">
+                                <p class="pageViews flexitem"> Retweets </p> 
+                                <p class="flexitem icon"><img src="images/icon-twitter.svg"> </p>
+                                <p class="number2 flexitem"> 117 </p> </li>
+                            </div>
+                </li>
+                <li class="flex-item-small" id="bigSquare9">
+                        <div class="flexteste">
+                                <p class="pageViews flexitem"> Likes </p> 
+                                <p class="flexitem icon"><img src="images/icon-twitter.svg"> </p>
+                                <p class="number2 flexitem"> 507 </p> </li>
+                            </div>
+                        </li>
+                <li class="flex-item-small" id="bigSquare10">
+                        <div class="flexteste">
+                                <p class="pageViews flexitem"> Likes </p> 
+                                <p class="flexitem icon"><img src="images/icon-youtube.svg"> </p>
+                                <p class="number2 flexitem"> 107 </p> </li>
+                            </div>
+                </li>
+                <li class="flex-item-small" id="bigSquare11">
+                        <div class="flexteste">
+                                <p class="pageViews flexitem"> Total Views </p> 
+                                <p class="flexitem icon"><img src="images/icon-youtube.svg"> </p>
+                                <p class="number2 flexitem"> 1407 </p> </li>
+                            </div>
+                </li>
+            </ul>
 
-  Dark Mode
-
-  
-
-  @nathanf
-  1987
-  Followers
-  12 Today
-
-  @nathanf
-  1044
-  Followers
-  99 Today
-
-  @realnathanf
-  11k
-  Followers
-  1099 Today
-
-  Nathan F.
-  8239
-  Subscribers
-  144 Today
 
 
+</section>
 
-  Overview - Today
 
-  Page Views
-  87
-  3%
-
-  Likes
-  52
-  2%
-
-  Likes
-  5462
-  2257%
-
-  Profile Views
-  52k
-  1375%
-
-  Retweets
-  117
-  303%
-
-  Likes
-  507
-  553%
-
-  Likes
-  107
-  19%
-
-  Total Views
-  1407
-  12%
-  
-  <div class="attribution">
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    Coded by <a href="#">Ana Paula Falcão</a>.
+  </footer> 
 </body>
 </html>
